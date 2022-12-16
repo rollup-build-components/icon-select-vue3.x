@@ -1,0 +1,72 @@
+{
+  "name": "@rollup-build-components/vue-icon-select-3.x",
+  "description": "基于 Vue3.x Ant Design Vue 图标选择器",
+  "homepage": "https://github.com/rollup-build-components/vue-icon-select-3.x",
+  "author": "lin pengteng <china.linpengteng@gmail.com>",
+  "version": "1.0.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.vue.d.ts",
+  "scripts": {
+    "build": "shx rm -rf dist && rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rollup-build-components/vue-icon-select-3.x.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rollup-build-components/vue-icon-select-3.x/issues"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "less": "^4.1.3",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@rollup/plugin-alias": "^4.0.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^23.0.5",
+    "@rollup/plugin-json": "^5.0.2",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-replace": "^5.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@rollup/pluginutils": "^5.0.2",
+    "@types/eslint": "^8.4.10",
+    "@types/node": "^18.11.15",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "@typescript-eslint/typescript-estree": "^5.46.1",
+    "@volar-plugins/prettyhtml": "^1.0.3",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.4.0",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "@vue/compiler-sfc": "^3.2.45",
+    "cz-message-helper": "^1.1.8",
+    "eslint": "^8.29.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "rollup": "^3.7.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.1",
+    "vue-template-compiler": "^2.7.14",
+    "vue-tsc": "^1.0.13"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-message-helper"
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
