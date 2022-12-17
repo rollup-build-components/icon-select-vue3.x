@@ -51,7 +51,7 @@ export default {
 <script setup lang="ts">
 import { computed } from 'vue'
 import * as components from '@ant-design/icons-vue'
-import icons from './icons'
+import icons from '@/icons'
 
 export interface EmitChange {
   (type: 'update:modelValue', value: string): void
