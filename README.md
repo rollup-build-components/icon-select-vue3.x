@@ -198,7 +198,7 @@
 
   ```javascript
     <script setup lang="ts">
-      import IconSelect from 'vue-icon-select-3.x'
+      import IconSelect from '@rollup-build-components/vue-icon-select-3.x'
       const value = ref('fast-forward')
       watch(value, v => console.log(v))
     </script>
