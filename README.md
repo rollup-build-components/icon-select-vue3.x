@@ -198,6 +198,7 @@
 
   ```javascript
     <script setup lang="ts">
+      import { ref, watch } from 'vue'
       import IconSelect from '@rollup-build-components/vue-icon-select-3.x'
       const value = ref('fast-forward')
       watch(value, v => console.log(v))
