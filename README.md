@@ -63,28 +63,28 @@
 - `rollup-plugin-vue`
 
     - 用途: 解析 Vue SFC (Single File Component)
-    - 版本: Vue3.x时, version = 6.0.0
+    - 版本: Vue3.x时, version >= 6.0.0
     - 依赖:
-      - `vue` version = 3.2.0
-      - `less` version = 4.1.3
-      - `vue-template-compiler` version = 3.2.0
+      - `vue` version >= 3.2.0
+      - `less` version >= 4.1.3
+      - `vue-template-compiler` version >= 3.2.0
 
 <br/>
 
-- rollup-plugin-postcss
+- `rollup-plugin-postcss`
 
     - 用途: 用于处理 css 样式, 包括 Vue 单文件中 `<style>` 样式
 
 <br/>
 
-- rollup-plugin-typescript2
+- `rollup-plugin-typescript2`
 
     - 用途: 用于处理 .vue 及 .ts文件中 `ts` 语法的解析
     - 问题: 在 rollup 处理中为什么不使用 @rollup/plugin-typescript 呢?, 因为在解析 .vue 文件中 `ts` 语法存在问题, **[查看 Issue](https://github.com/vuejs/rollup-plugin-vue/issues/400)**
 
 <br/>
 
-- @rollup/plugin-typescript
+- `@rollup/plugin-typescript`
 
     - 用途: 用于解析 rollup.config.ts 配置文件
     - 使用: rollup --config rollup.config.ts --configPlugin typescript // 此处 typescript 即 @rollup/plugin-typescript
