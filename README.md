@@ -13,7 +13,8 @@
 1. Rollup 打包 Vue3.x 组件 所需依赖
 2. Rollup 打包 Vue3.x 组件 插件选项
 3. Rollup 打包 Script 脚本 运行配置
-4. 如何下载使用 IconSelect 组件?
+4. Rollup 打包 Typescript 相关配置
+5. 如何下载使用 IconSelect 组件?
 
 
 <br/>
@@ -176,7 +177,52 @@
 <br/>
 
 
-## 4. 如何下载使用 IconSelect 组件?
+## 4. Rollup 打包 Typescript 相关配置
+
+- 创建 tsconfig.json 配置文件，需生成声明文件，则需要增加 declaration: true
+```json
+  {
+    "compilerOptions": {
+      "baseUrl": "./",
+      "outDir": "dist",
+      "target": "ESNext",
+      "module": "ESNext",
+      "jsx": "preserve",
+      "moduleResolution": "Node",
+      "useDefineForClassFields": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "declaration": true,
+      "lib": [
+        "ESNext",
+        "DOM"
+      ],
+      "paths": {
+        "@/*": [
+          "src/*"
+        ]
+      }
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.d.ts",
+      "src/**/*.tsx",
+      "src/**/*.vue"
+    ]
+  }
+```
+
+
+<br/>
+<br/>
+
+
+## 5. 如何下载使用 IconSelect 组件?
 
   - 安装
   ```shell
