@@ -1,5 +1,7 @@
+import 'ant-design-vue/es/select/style/index.less';
+import { SelectValue } from 'ant-design-vue/es/select';
 export interface EmitChange {
-    (type: 'update:modelValue', value: string): void;
+    (type: 'update:modelValue', value: SelectValue): void;
 }
 declare const _default: import("vue").DefineComponent<{
     modelValue: {

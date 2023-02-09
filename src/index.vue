@@ -50,11 +50,13 @@ export default {
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import 'ant-design-vue/es/select/style/index.less'
+import ASelect, { SelectOption as ASelectOption, SelectOptGroup as ASelectOptGroup, SelectValue } from 'ant-design-vue/es/select'
 import * as components from '@ant-design/icons-vue'
 import icons from '@/icons'
 
 export interface EmitChange {
-  (type: 'update:modelValue', value: string): void
+  (type: 'update:modelValue', value: SelectValue): void
 }
 
 defineProps({

@@ -1,4 +1,6 @@
-import { defineComponent, computed, resolveComponent, openBlock, createBlock, unref, withCtx, createElementBlock, Fragment, renderList, createElementVNode, toDisplayString, resolveDynamicComponent } from 'vue';
+import { defineComponent, computed, openBlock, createBlock, unref, withCtx, createElementBlock, Fragment, renderList, createElementVNode, toDisplayString, resolveDynamicComponent } from 'vue';
+import 'ant-design-vue/es/select/style/index.less';
+import ASelect, { SelectOptGroup, SelectOption } from 'ant-design-vue/es/select';
 import * as components from '@ant-design/icons-vue';
 
 /**
@@ -475,10 +477,7 @@ var script = /*#__PURE__*/defineComponent({
     };
     const bindChange = emitChange.bind(null, 'update:modelValue');
     return (_ctx, _cache) => {
-      const _component_a_select_option = resolveComponent("a-select-option");
-      const _component_a_select_opt_group = resolveComponent("a-select-opt-group");
-      const _component_a_select = resolveComponent("a-select");
-      return openBlock(), createBlock(_component_a_select, {
+      return openBlock(), createBlock(unref(ASelect), {
         virtual: false,
         value: __props.modelValue,
         disabled: __props.disabled,
@@ -493,14 +492,14 @@ var script = /*#__PURE__*/defineComponent({
         onChange: unref(bindChange)
       }, {
         default: withCtx(() => [(openBlock(true), createElementBlock(Fragment, null, renderList(unref(groups), group => {
-          return openBlock(), createBlock(_component_a_select_opt_group, {
+          return openBlock(), createBlock(unref(SelectOptGroup), {
             key: group.key,
             label: group.title
           }, {
             label: withCtx(() => [createElementVNode("span", _hoisted_1, toDisplayString(group.title), 1 /* TEXT */)]),
 
             default: withCtx(() => [(openBlock(true), createElementBlock(Fragment, null, renderList(group.children, item => {
-              return openBlock(), createBlock(_component_a_select_option, {
+              return openBlock(), createBlock(unref(SelectOption), {
                 key: item.key,
                 value: item.value,
                 title: item.label,

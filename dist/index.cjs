@@ -3,6 +3,8 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var vue = require('vue');
+require('ant-design-vue/es/select/style/index.less');
+var ASelect = require('ant-design-vue/es/select');
 var components = require('@ant-design/icons-vue');
 
 function _interopNamespaceDefault(e) {
@@ -498,10 +500,7 @@ var script = /*#__PURE__*/vue.defineComponent({
     };
     const bindChange = emitChange.bind(null, 'update:modelValue');
     return (_ctx, _cache) => {
-      const _component_a_select_option = vue.resolveComponent("a-select-option");
-      const _component_a_select_opt_group = vue.resolveComponent("a-select-opt-group");
-      const _component_a_select = vue.resolveComponent("a-select");
-      return vue.openBlock(), vue.createBlock(_component_a_select, {
+      return vue.openBlock(), vue.createBlock(vue.unref(ASelect), {
         virtual: false,
         value: __props.modelValue,
         disabled: __props.disabled,
@@ -516,14 +515,14 @@ var script = /*#__PURE__*/vue.defineComponent({
         onChange: vue.unref(bindChange)
       }, {
         default: vue.withCtx(() => [(vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(vue.unref(groups), group => {
-          return vue.openBlock(), vue.createBlock(_component_a_select_opt_group, {
+          return vue.openBlock(), vue.createBlock(vue.unref(ASelect.SelectOptGroup), {
             key: group.key,
             label: group.title
           }, {
             label: vue.withCtx(() => [vue.createElementVNode("span", _hoisted_1, vue.toDisplayString(group.title), 1 /* TEXT */)]),
 
             default: vue.withCtx(() => [(vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(group.children, item => {
-              return vue.openBlock(), vue.createBlock(_component_a_select_option, {
+              return vue.openBlock(), vue.createBlock(vue.unref(ASelect.SelectOption), {
                 key: item.key,
                 value: item.value,
                 title: item.label,
