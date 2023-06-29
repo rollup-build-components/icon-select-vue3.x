@@ -64,5 +64,5 @@ declare const _default: import("vue").DefineComponent<{
     allowClear: boolean;
     disabled: boolean;
     value: string;
-}>;
+}, {}>;
 export default _default;

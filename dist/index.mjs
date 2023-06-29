@@ -491,7 +491,7 @@ var script = /*#__PURE__*/defineComponent({
         dropdownClassName: "s-icon-dropdown-wrapper",
         onChange: unref(bindChange)
       }, {
-        default: withCtx(() => [(openBlock(true), createElementBlock(Fragment, null, renderList(unref(groups), group => {
+        default: withCtx(() => [(openBlock(true), createElementBlock(Fragment, null, renderList(groups.value, group => {
           return openBlock(), createBlock(unref(SelectOptGroup), {
             key: group.key,
             label: group.title

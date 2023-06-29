@@ -514,7 +514,7 @@ var script = /*#__PURE__*/vue.defineComponent({
         dropdownClassName: "s-icon-dropdown-wrapper",
         onChange: vue.unref(bindChange)
       }, {
-        default: vue.withCtx(() => [(vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(vue.unref(groups), group => {
+        default: vue.withCtx(() => [(vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(groups.value, group => {
           return vue.openBlock(), vue.createBlock(vue.unref(ASelect.SelectOptGroup), {
             key: group.key,
             label: group.title

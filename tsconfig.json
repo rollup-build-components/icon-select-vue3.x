@@ -9,7 +9,7 @@
     "useDefineForClassFields": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
