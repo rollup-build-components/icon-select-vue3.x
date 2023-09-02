@@ -1,9 +1,9 @@
 {
-  "name": "@rollup-build-components/vue-icon-select-3.x",
+  "name": "@rollup-build-components/icon-select-vue3.x",
   "description": "基于 Vue3.x Ant Design Vue 图标选择器",
-  "homepage": "https://github.com/rollup-build-components/vue-icon-select-3.x",
+  "homepage": "https://github.com/rollup-build-components/icon-select-vue3.x",
   "author": "lin pengteng <china.linpengteng@gmail.com>",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rollup-build-components/vue-icon-select-3.x.git"
+    "url": "git+https://github.com/rollup-build-components/icon-select-vue3.x.git"
   },
   "bugs": {
-    "url": "https://github.com/rollup-build-components/vue-icon-select-3.x/issues"
+    "url": "https://github.com/rollup-build-components/icon-select-vue3.x/issues"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.1.0",

@@ -21,7 +21,7 @@
 <br/>
 
 
-## 1. Rollup 打包 Vue3.x 组件 - 所需依赖 (详见 [package.json](https://github.com/rollup-build-components/vue-icon-select-3.x/blob/main/package.json))
+## 1. Rollup 打包 Vue3.x 组件 - 所需依赖 (详见 [package.json](https://github.com/rollup-build-components/icon-select-vue3.x/blob/main/package.json))
 
 - `@rollup/plugin-alias`
 
@@ -227,9 +227,9 @@
   - 安装
   ```shell
 
-    yarn add @rollup-build-components/vue-icon-select-3.x
+    yarn add @rollup-build-components/icon-select-vue3.x
 
-    pnpm add @rollup-build-components/vue-icon-select-3.x
+    pnpm add @rollup-build-components/icon-select-vue3.x
 
   ```
 
@@ -245,7 +245,7 @@
   ```javascript
     <script setup lang="ts">
       import { ref, watch } from 'vue'
-      import IconSelect from '@rollup-build-components/vue-icon-select-3.x'
+      import IconSelect from '@rollup-build-components/icon-select-vue3.x'
       const value = ref('fast-forward')
       watch(value, v => console.log(v))
     </script>
