@@ -346,7 +346,6 @@ export default [
       'download',
       'ellipsis',
       'euro',
-      'error',
       'export',
       'file-done',
       'file-jpg',

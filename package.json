@@ -3,7 +3,7 @@
   "description": "基于 Vue3.x Ant Design Vue 图标选择器",
   "homepage": "https://github.com/rollup-build-components/icon-select-vue3.x",
   "author": "lin pengteng <china.linpengteng@gmail.com>",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
